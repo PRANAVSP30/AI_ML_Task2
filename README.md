@@ -1,66 +1,86 @@
-AI & ML Internship — Task 2
+AI & ML Internship – Task 2
 Data Cleaning & Missing Value Handling
-By: Pranav S P
+Submitted by: Pranav S P
+📝 Project Overview
 
-Project Overview
+This task focuses on cleaning the House Prices Dataset by identifying missing values, visualizing missing patterns, applying appropriate imputation techniques, and preparing a cleaned dataset ready for machine learning.
 
-This task focuses on cleaning the House Prices Dataset by identifying missing values, visualizing missing patterns, applying appropriate imputation techniques, and generating a clean dataset ready for machine learning.
-To ensure modularity, I created a custom data cleaning module (data_cleaner.py), similar to real-world ML pipelines.
+To follow a professional workflow, I built a custom data cleaning module (data_cleaner.py) and used a modular notebook structure similar to real ML pipelines.
 
+📁 Dataset Used
 
-Project Structure
+House Prices Dataset
+Contains features such as location, median income, room count, bedroom count, population, households, and median house value.
+
+🛠 Tools Used
+
+Python
+
+Pandas
+
+NumPy
+
+Matplotlib
+
+VS Code / Jupyter Notebook
+
+Git & GitHub (Version control)
+
+📂 Project Structure
 AI_ML_Task2/
 │
 ├── data/
-│   ├── house_prices.csv               # Original dataset
-│   └── house_prices_cleaned.csv       # Cleaned dataset
+│   ├── house_prices.csv
+│   └── house_prices_cleaned.csv
 │
 ├── src/
-│   └── data_cleaner.py                # Custom cleaning module
+│   └── data_cleaner.py
 │
 ├── notebooks/
-│   └── cleaning.ipynb                 # Main data cleaning notebook
+│   └── cleaning.ipynb
 │
 ├── reports/
-│   └── task2_report.md                # One-page professional cleaning report
+│   └── task2_report.md
 │
 └── outputs/
-    └── screenshots/                   # Screenshots of notebook outputs
+    └── screenshots/
 
+🚀 Cleaning Workflow Summary
 
-Cleaning Workflow Summary 
-  1.Loaded the House Prices dataset using Pandas.
-  2.Generated missing value summary using a custom missing_summary() function.
-  3.Visualized missing data patterns using a bar chart (matplotlib).
-  4.Identified high-missing columns (>60%) and checked if they needed removal.
-  5.Performed numerical imputation using median for stability against outliers.
-  6.Checked categorical columns and applied mode imputation when required.
-  7.Generated a before-vs-after cleaning report using cleaning_report().
-  8.Verified dataset completeness and ensured all missing values were resolved.
-  9.Exported the cleaned dataset as house_prices_cleaned.csv for ML readiness.
+Loaded the dataset using Pandas.
 
+Generated missing value summary using a custom missing_summary() function.
 
-Tech Stack Used 
+Visualized missing data using a bar chart (matplotlib).
 
-Languages & Libraries:
-  Python 3.11
-  Pandas — data handling & analysis
-  NumPy — numerical operations
-  Matplotlib — visualizations
-  Jupyter Notebook / VS Code — notebook execution environment
+Checked for high-missing columns (>60%) and removed if necessary.
 
-Tools:
-  Git & GitHub — version control
-  VS Code — development environment
+Applied median imputation for numerical columns (robust to outliers).
 
+Applied mode imputation for categorical columns when required.
 
-Key Learnings from Task 2
+Generated a before-vs-after cleaning report using cleaning_report().
 
-How to analyze missing values
+Verified dataset completeness and confirmed all missing values were resolved.
+
+Exported cleaned dataset as house_prices_cleaned.csv.
+
+📊 Before vs After Cleaning
+Metric	Before	After
+Rows	20,640	20,640
+Columns	10	10
+Missing Values	207	0
+Dropped Columns	None	—
+📘 What I Learned from This Task
+
+How to detect and analyze missing values
+
 When to drop vs. when to impute
-Mean vs median vs mode imputation
-Why missing data affects ML performance
-How to avoid data leakage
-How to write reusable data cleaning functions
-How to create a professional cleaning report
 
+Mean vs Median vs Mode imputation
+
+Avoiding data leakage during cleaning
+
+Writing reusable cleaning code using Python modules
+
+Creating professional reports and workflow documentation
