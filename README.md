@@ -1,86 +1,60 @@
-AI & ML Internship – Task 2
-Data Cleaning & Missing Value Handling
-Submitted by: Pranav S P
-📝 Project Overview
+# AI & ML Internship – Task 2
+# Data Cleaning & Missing Value Handling
+# Submitted by: Pranav S P 
+
+## 1.Project Overview
 
 This task focuses on cleaning the House Prices Dataset by identifying missing values, visualizing missing patterns, applying appropriate imputation techniques, and preparing a cleaned dataset ready for machine learning.
 
 To follow a professional workflow, I built a custom data cleaning module (data_cleaner.py) and used a modular notebook structure similar to real ML pipelines.
 
-📁 Dataset Used
 
-House Prices Dataset
-Contains features such as location, median income, room count, bedroom count, population, households, and median house value.
+## 2.Dataset Used
 
-🛠 Tools Used
+### House Prices Dataset : Contains features such as location, median income, room count, bedroom count, population, households, and median house value.
 
-Python
 
-Pandas
+## 3.TechStack & Tools Used
 
-NumPy
+    1.Python
 
-Matplotlib
+    2.Pandas
 
-VS Code / Jupyter Notebook
+    3.NumPy
 
-Git & GitHub (Version control)
+    4.Matplotlib
 
-📂 Project Structure
-AI_ML_Task2/
-│
-├── data/
-│   ├── house_prices.csv
-│   └── house_prices_cleaned.csv
-│
-├── src/
-│   └── data_cleaner.py
-│
-├── notebooks/
-│   └── cleaning.ipynb
-│
-├── reports/
-│   └── task2_report.md
-│
-└── outputs/
-    └── screenshots/
+    5.VS Code / Jupyter Notebook
 
-🚀 Cleaning Workflow Summary
+    6.Git & GitHub (Version control)
 
-Loaded the dataset using Pandas.
 
-Generated missing value summary using a custom missing_summary() function.
+## 4.Cleaning Workflow Summary
 
-Visualized missing data using a bar chart (matplotlib).
+    1.Loaded the dataset using Pandas.
 
-Checked for high-missing columns (>60%) and removed if necessary.
+    2.Generated missing value summary using custom missing_summary().
 
-Applied median imputation for numerical columns (robust to outliers).
+    3.Visualized missing patterns using bar chart (Matplotlib).
 
-Applied mode imputation for categorical columns when required.
+    4.Checked for high-missing columns (>60%).
 
-Generated a before-vs-after cleaning report using cleaning_report().
+    5.Imputed numerical columns using median.
 
-Verified dataset completeness and confirmed all missing values were resolved.
+    6.Imputed categorical columns using mode (if needed).
 
-Exported cleaned dataset as house_prices_cleaned.csv.
+    7.Generated detailed before–after cleaning report.
 
-📊 Before vs After Cleaning
-Metric	Before	After
-Rows	20,640	20,640
-Columns	10	10
-Missing Values	207	0
-Dropped Columns	None	—
-📘 What I Learned from This Task
+    8.Verified all missing values were handled correctly.
 
-How to detect and analyze missing values
+    9.Exported cleaned dataset as house_prices_cleaned.csv.
 
-When to drop vs. when to impute
 
-Mean vs Median vs Mode imputation
+## 5.What i learnt from this project
 
-Avoiding data leakage during cleaning
-
-Writing reusable cleaning code using Python modules
-
-Creating professional reports and workflow documentation
+    -> How to detect and understand missing values.
+    -> When to impute vs drop rows.
+    -> Mean vs Median vs Mode imputation.
+    -> Why missing data affects ML accuracy.
+    -> How to avoid data leakage.
+    -> Building reusable Python modules
